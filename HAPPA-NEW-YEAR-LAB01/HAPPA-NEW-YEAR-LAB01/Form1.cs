@@ -22,12 +22,22 @@ namespace HAPPA_NEW_YEAR_LAB01
             System.Drawing.Graphics myGraphic;
             myGraphic = this.CreateGraphics();
 
+            ///myGraphic.DrawLine(myPen1, 50, 50, 200, 50); //จุดเร่ิ่ม จุดสิ้นสุด 
+            ///myGraphic.DrawRectangle(myPen1, 15, 35, 170, 140); //จุดมุมบนซ้าย ความกว้าง ความสูงของสี่เหลี่ยม
+            ///myGraphic.DrawEllipse(myPen2, 15, 35, 170, 140); //จุดมุมบนซ้าย ความกว้าง ความสูงของกรอบสี่เหลี่ยม
+            ///myGraphic.DrawArc(myPen1, 100, 100, 450, 450, 0, 45); //จุดมุมบนซ้าย ความกว้าง ความสูง องศาเริ่ม องศาสิ้นสุด ตามเข็ม
+
             Pen myPen1 = new Pen(System.Drawing.Color.DarkOrange, 7);
             Pen myPen2 = new Pen(System.Drawing.Color.Red, 7);
-            Pen myPen3 = new Pen(System.Drawing.Color.SeaGreen, 7);
-            Pen myPen4 = new Pen(System.Drawing.Color.Blue, 6);
-            Pen myPen5 = new Pen(System.Drawing.Color.DarkGray, 5);
-
+            Pen myPen3 = new Pen(System.Drawing.Color.SeaGreen, 10);
+            Pen myPen4 = new Pen(System.Drawing.Color.Blue, 7);
+            Pen myPen5 = new Pen(System.Drawing.Color.DarkGray, 7);
+            Pen myPen6 = new Pen(System.Drawing.Color.Purple, 43);
+            Pen myPen7 = new Pen(System.Drawing.Color.Black, 15);
+            Pen myPen8 = new Pen(System.Drawing.Color.White, 7);
+            Pen myPen9 = new Pen(System.Drawing.Color.DeepPink, 20);
+            Pen myPen10 = new Pen(System.Drawing.Color.Purple, 7);
+            Pen myPen11 = new Pen(System.Drawing.Color.Khaki, 9);
 
             SolidBrush mySolidBrush1 = new SolidBrush(Color.LightGreen);
             SolidBrush mySolidBrush2 = new SolidBrush(Color.Khaki);
@@ -71,10 +81,14 @@ namespace HAPPA_NEW_YEAR_LAB01
             myGraphic.DrawLine(myPen1, 200, 40, 220, 40);                   // = __****
 
             myGraphic.DrawLine(myPen1, 160, 40, 200, 120);                  // = \\*
+            
+            myGraphic.DrawLine(myPen11, 157, 51, 203, 139);                  // = \\*สี
+
+
             myGraphic.DrawLine(myPen1, 160, 75, 195, 140);                  // = \\**
 
-            myGraphic.FillRectangle(mySolidBrush2, 143, 43, 16, 97);        //*
-            myGraphic.FillRectangle(mySolidBrush2, 202, 43, 16, 97);        //**
+            myGraphic.FillRectangle(mySolidBrush2, 143, 43, 16, 97);        // = *
+            myGraphic.FillRectangle(mySolidBrush2, 202, 43, 16, 97);        // = **
 
 
 
@@ -95,19 +109,78 @@ namespace HAPPA_NEW_YEAR_LAB01
             myGraphic.DrawLine(myPen2, 285, 140, 315, 140);                  // = __**
             myGraphic.DrawLine(myPen2, 325, 40, 360, 40);                    // = __****
 
-            myGraphic.FillRectangle(mySolidBrush3, 289, 74, 23, 64);         //**
+            myGraphic.FillRectangle(mySolidBrush3, 289, 74, 23, 64);         // = **
 
 
             //นี่คือตัว Y
 
+
+            //นี่คือ เลข 2
             myGraphic.DrawLine(myPen4, 25, 190, 25, 235);                    // = || *
+            myGraphic.DrawLine(myPen4, 160, 190, 160, 300);                  // = || *
+            myGraphic.DrawLine(myPen4, 25, 190, 160, 190);                   // = || *
+            myGraphic.DrawLine(myPen4, 25, 230, 120, 230);                   // = || *
+            myGraphic.DrawLine(myPen4, 120, 230, 120, 260);                  // =
+            myGraphic.DrawLine(myPen4, 25, 260, 120, 260);                   // = 00
+            myGraphic.DrawLine(myPen4, 25, 260, 25, 370);                    // =
+            myGraphic.DrawLine(myPen4, 160, 330, 160, 370);                  // = || *
+            myGraphic.DrawLine(myPen4, 25, 370, 160, 370);                   // =
+            myGraphic.DrawLine(myPen4, 60, 330, 160, 330);                   // =
+            myGraphic.DrawLine(myPen4, 60, 290, 60, 335);                    // =
+            myGraphic.DrawLine(myPen4, 60, 295, 160, 295);                   // =
+            //นี่คือ เลข 2
 
-            myGraphic.DrawLine(myPen4, 140, 190, 140, 360);                    // = || *
+
+            //นี่คือ เลข 0
+            myGraphic.DrawEllipse(myPen6, 195, 200, 100, 150);               // =
+            myGraphic.DrawEllipse(myPen9, 195, 200, 100, 150);               // =
+            //นี่คือ เลข 0
 
 
 
-            //myGraphic.DrawArc(myPen1, 100, 100, 450, 450, 0, 45); //เส้นโค้ง//จุดมุมบนซ้าย ความกว้าง ความสูง องศาเริ่ม องศาสิ้นสุด ตามเข็ม
-            //myGraphic.DrawArc(myPen1, 100, 100, 100, 100, 100, 50);
+            //นี่คือ เลข 2
+            myGraphic.DrawLine(myPen4, 330, 190, 330, 235);                  // =                    
+            myGraphic.DrawLine(myPen4, 465, 190, 465, 300);                  // =
+            myGraphic.DrawLine(myPen4, 330, 260, 330, 370);                  // =
+            myGraphic.DrawLine(myPen4, 425, 230, 425, 260);                  // =
+            myGraphic.DrawLine(myPen4, 465, 330, 465, 370);                  // =
+            myGraphic.DrawLine(myPen4, 365, 290, 365, 335);                  // =
+            myGraphic.DrawLine(myPen4, 330, 190, 465, 190);                  // =
+            myGraphic.DrawLine(myPen4, 330, 230, 425, 230);                  // =
+            myGraphic.DrawLine(myPen4, 330, 370, 465, 370);                  // =
+            myGraphic.DrawLine(myPen9, 330, 400, 330, 400);                  // =                      
+            myGraphic.DrawLine(myPen4, 330, 260, 425, 260);                  // =
+            myGraphic.DrawLine(myPen4, 360, 330, 465, 330);                  // =
+            myGraphic.DrawLine(myPen4, 365, 295, 465, 295);                  // =
+            //นี่คือ เลข 2
+
+
+            //นี่คือ เลข 3
+            myGraphic.DrawLine(myPen4, 485, 190, 620, 190);                  // =
+
+            myGraphic.DrawLine(myPen4, 485, 230, 580, 230);                  // =
+
+            myGraphic.DrawLine(myPen4, 485, 260, 580, 260);                  // =
+
+            myGraphic.DrawLine(myPen4, 485, 295, 580, 295);                  // =
+
+            myGraphic.DrawLine(myPen4, 485, 330, 580, 330);                  // =
+
+            myGraphic.DrawLine(myPen4, 485, 370, 620, 370);                  // =
+
+            myGraphic.DrawLine(myPen4, 620, 190, 620, 370);                  // =
+            myGraphic.DrawLine(myPen4, 485, 190, 485, 235);                  // =
+
+            myGraphic.DrawLine(myPen4, 580, 190, 580, 370);                  // =
+
+
+            myGraphic.DrawLine(myPen4, 485, 260, 485, 295);                  // =
+            myGraphic.DrawLine(myPen4, 485, 330, 485, 370);                  // =
+            //นี่คือ เลข 3
+
+
+
+
         }
     }
 }
