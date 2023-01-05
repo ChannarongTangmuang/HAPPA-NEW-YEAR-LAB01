@@ -38,6 +38,8 @@ namespace HAPPA_NEW_YEAR_LAB01
             Pen myPen9 = new Pen(System.Drawing.Color.DeepPink, 20);
             Pen myPen10 = new Pen(System.Drawing.Color.Purple, 7);
             Pen myPen11 = new Pen(System.Drawing.Color.Khaki, 9);
+            Pen myPen12 = new Pen(System.Drawing.Color.LightSalmon, 15);
+
 
             SolidBrush mySolidBrush1 = new SolidBrush(Color.LightGreen);
             SolidBrush mySolidBrush2 = new SolidBrush(Color.Khaki);
@@ -71,9 +73,9 @@ namespace HAPPA_NEW_YEAR_LAB01
 
             //นี่คือตัว N
             myGraphic.DrawLine(myPen1, 140, 40, 140, 140);                  // = ||*
-            myGraphic.DrawLine(myPen1, 160, 75, 160, 140);                  // = ||**
+            myGraphic.DrawLine(myPen1, 160, 60, 160, 140);                  // = ||**
             myGraphic.DrawLine(myPen1, 220, 40, 220, 140);                  // = ||***
-            myGraphic.DrawLine(myPen1, 200, 40, 200, 120);                  // = ||****
+            myGraphic.DrawLine(myPen1, 200, 40, 200, 130);                  // = ||****
 
             myGraphic.DrawLine(myPen1, 140, 40, 160, 40);                   // = __*
             myGraphic.DrawLine(myPen1, 140, 140, 160, 140);                 // = __**
@@ -87,8 +89,8 @@ namespace HAPPA_NEW_YEAR_LAB01
 
             myGraphic.DrawLine(myPen1, 160, 75, 195, 140);                  // = \\**
 
-            myGraphic.FillRectangle(mySolidBrush2, 143, 43, 16, 97);        // = *
-            myGraphic.FillRectangle(mySolidBrush2, 202, 43, 16, 97);        // = **
+            //myGraphic.FillRectangle(mySolidBrush2, 143, 43, 16, 97);        // = *
+            //myGraphic.FillRectangle(mySolidBrush2, 202, 43, 16, 97);        // = **
 
 
 
@@ -111,6 +113,14 @@ namespace HAPPA_NEW_YEAR_LAB01
 
             myGraphic.FillRectangle(mySolidBrush3, 289, 74, 23, 64);         // = **
 
+            //myGraphic.FillRectangle(mySolidBrush3, 250, 43, 15, 60);        // = *
+
+            //myGraphic.DrawLine(myPen11, 157, 51, 203, 139);                  // = \\*สี
+
+            //myGraphic.DrawLine(myPen12, 250, 43, 270, 70);                  // = \\*สี
+            myGraphic.DrawLine(myPen12, 255, 45, 275, 70);                  // = \\*สี
+            //myGraphic.DrawLine(myPen12, 260, 43, 280, 70);                  // = \\*สี
+            //myGraphic.DrawLine(myPen12, 265, 43, 285, 90);                  // = \\*สี
 
             //นี่คือตัว Y
 
@@ -171,13 +181,14 @@ namespace HAPPA_NEW_YEAR_LAB01
             myGraphic.DrawLine(myPen4, 620, 190, 620, 370);                  // =
             myGraphic.DrawLine(myPen4, 485, 190, 485, 235);                  // =
 
-            myGraphic.DrawLine(myPen4, 580, 190, 580, 370);                  // =
+            myGraphic.DrawLine(myPen4, 580, 230, 580, 260);                  // =
+
+            myGraphic.DrawLine(myPen4, 580, 295, 580, 330);                  // =
 
 
             myGraphic.DrawLine(myPen4, 485, 260, 485, 295);                  // =
             myGraphic.DrawLine(myPen4, 485, 330, 485, 370);                  // =
             //นี่คือ เลข 3
-
 
 
 
