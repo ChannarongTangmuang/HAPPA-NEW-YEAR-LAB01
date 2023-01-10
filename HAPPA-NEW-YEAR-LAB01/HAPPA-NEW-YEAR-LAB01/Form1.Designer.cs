@@ -35,7 +35,7 @@
             // 
             this.buttonSTART.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSTART.ForeColor = System.Drawing.Color.Olive;
-            this.buttonSTART.Location = new System.Drawing.Point(769, 556);
+            this.buttonSTART.Location = new System.Drawing.Point(959, 569);
             this.buttonSTART.Name = "buttonSTART";
             this.buttonSTART.Size = new System.Drawing.Size(134, 64);
             this.buttonSTART.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 645);
+            this.ClientSize = new System.Drawing.Size(1145, 645);
             this.Controls.Add(this.buttonSTART);
             this.Name = "Form1";
             this.Text = "Form1";
